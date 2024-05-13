@@ -1,4 +1,13 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 function Header() {
+  const [currentPage, setCurrentPage] = useState('');
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   function menuOpen() {
     const menu = document.querySelector('.header__menu');
     menu.classList.toggle('header__menu_open');
@@ -22,25 +31,150 @@ function Header() {
               <img
                 className='header__hamburger_image'
                 src={require('../../images/hamburger.png')}
+                alt='Menu hamburger'
               />
             </button>
           </div>
-          <div className='header_button-container'>
-            <button className='header_button'>Home</button>
-            <button className='header_button'>Sobre Mim</button>
-            <button className='header_button'>Sobre as aulas</button>
-            <button className='header_button'>Teste seu inglês!</button>
-            <button className='header_button'>Entre em contato</button>
-          </div>
+          <nav>
+            <ul className='header_button-container'>
+              <li>
+                <Link
+                  to='/'
+                  onClick={() => handlePageChange('home')}
+                  className={
+                    currentPage === 'home'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/sobremim'
+                  onClick={() => handlePageChange('sobremim')}
+                  className={
+                    currentPage === 'sobremim'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Sobre Mim
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/sobreasaulas'
+                  onClick={() => handlePageChange('sobreasaulas')}
+                  className={
+                    currentPage === 'sobreasaulas'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Sobre as Aulas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/quiz'
+                  onClick={() => handlePageChange('quiz')}
+                  className={
+                    currentPage === 'quiz'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Teste seu inglês!
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/contato'
+                  onClick={() => handlePageChange('contato')}
+                  className={
+                    currentPage === 'contato'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Contate-me
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div className='header__menu'>
-          <div className='header_button-hamburger'>
-            <button className='header_button'>Home</button>
-            <button className='header_button'>Sobre Mim</button>
-            <button className='header_button'>Sobre as aulas</button>
-            <button className='header_button'>Teste seu inglês!</button>
-            <button className='header_button'>Entre em contato</button>
-          </div>
+          <nav>
+            <ul className='header__button-hamburger'>
+              <li>
+                <Link
+                  to='/'
+                  onClick={() => handlePageChange('home')}
+                  className={
+                    currentPage === 'home'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/sobremim'
+                  onClick={() => handlePageChange('sobremim')}
+                  className={
+                    currentPage === 'sobremim'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Sobre Mim
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/sobreasaulas'
+                  onClick={() => handlePageChange('sobreasaulas')}
+                  className={
+                    currentPage === 'sobreasaulas'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Sobre as Aulas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/quiz'
+                  onClick={() => handlePageChange('quiz')}
+                  className={
+                    currentPage === 'quiz'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Teste seu inglês!
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to='/contato'
+                  onClick={() => handlePageChange('contato')}
+                  className={
+                    currentPage === 'contato'
+                      ? 'header__button_active'
+                      : 'header__button'
+                  }
+                >
+                  Contate-me
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div className='header__line' />
       </header>
