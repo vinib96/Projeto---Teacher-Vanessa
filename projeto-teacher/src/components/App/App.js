@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Header />
       <Routes>
         <Route path='/' element={<Main />} />
@@ -18,8 +18,8 @@ function App() {
         <Route path='/quiz' element={<Quiz />} />
         <Route path='/contato' element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
-    </>
+      <Footer />
+    </div>
   );
 }
 export default App;

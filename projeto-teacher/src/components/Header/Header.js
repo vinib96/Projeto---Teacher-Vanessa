@@ -26,15 +26,6 @@ function Header() {
             />
             <span className='header_logo-text'>Teacher Vanessa</span>
           </div>
-          <div className='header__hamburguer'>
-            <button className='header__hamburguer_icon' onClick={menuOpen}>
-              <img
-                className='header__hamburger_image'
-                src={require('../../images/hamburger.png')}
-                alt='Menu hamburger'
-              />
-            </button>
-          </div>
           <nav>
             <ul className='header_button-container'>
               <li>
@@ -104,6 +95,15 @@ function Header() {
               </li>
             </ul>
           </nav>
+          <div className='header__hamburguer'>
+            <button className='header__hamburguer_icon' onClick={menuOpen}>
+              <img
+                className='header__hamburger_image'
+                src={require('../../images/hamburger.png')}
+                alt='Menu hamburger'
+              />
+            </button>
+          </div>
         </div>
         <div className='header__menu'>
           <nav>
