@@ -13,8 +13,8 @@ const Footer = () => {
         <div className='footer__column footer__column_content_copyright'>
           <img
             className='logo logo_place_footer'
-            src=''
-            alt='Logo da Practium'
+            src={require('../../images/footer-logo.png')}
+            alt='Logo da Teacher Vanessa'
           />
           <h3 className='footer__author'>(c) 2024 Vinícius Bueno</h3>
         </div>
@@ -92,10 +92,13 @@ const Footer = () => {
           <h3 className='footer__column-heading'>Mídia social</h3>
           <ul className='footer__list'>
             <li>
-              <a className='footer__column-link' href='#'>
+              <a
+                className='footer__column-link'
+                href='https://www.facebook.com/vancsbueno'
+              >
                 <img
                   className='footer__social-icons'
-                  src='./images/facebook_white.svg'
+                  src={require('../../images/facebook_white.png')}
                   alt='ícone do Facebook'
                 />
                 Facebook
@@ -105,7 +108,7 @@ const Footer = () => {
               <a className='footer__column-link' href='#'>
                 <img
                   className='footer__social-icons'
-                  src='./images/instagram_white.svg'
+                  src={require('../../images/instagram_white.png')}
                   alt='ícone do Instagram'
                 />
                 Instagram

@@ -5,13 +5,21 @@
   padding-top: 5%;
 }
 .main__container {
-  margin-left: 15px;
+  margin-left: 60px;
   display: flex;
 }
 .main__title {
   margin: 0;
   font-size: 45px;
   font-weight: 700;
+}
+
+.main__title-container {
+  width: 50%;
+}
+
+.main__image {
+  margin-left: 60px;
 }
 
 @media screen and (max-width: 880px) {
