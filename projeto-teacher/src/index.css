@@ -8,6 +8,7 @@
 @import url(./components/Main/Main.css);
 @import url(./components/Preloader/preloader.css);
 @import url(./components/Quiz/Quiz.css);
+@import url(./components/Maps/Maps.css);
 
 html,
 body {

@@ -2,13 +2,44 @@
   min-height: 100%;
   background-color: red;
   display: flex;
+  justify-content: space-around;
   color: white;
+  font-family: Montserrat;
 }
-
 .footer__columns {
+  display: grid;
+  grid-template-areas:
+    'logo position about midia'
+    'author . . .';
+  margin: 10px;
+  column-gap: 20px;
+}
+.footer__column-heading {
+  margin-top: 10px;
+}
+.footer__column_content_logo {
+  grid-area: logo;
+}
+.footer__column_content_adress {
+  grid-area: position;
+}
+.footer__column_content_copyright {
+  grid-area: author;
+}
+.footer__column_content_about {
+  grid-area: about;
+}
+.footer__column_content_social {
+  grid-area: midia;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+/* .footer__columns {
   display: flex;
   width: 90%;
-  margin: 60px auto 40px;
+  margin: 30px auto;
   justify-content: space-between;
 }
 
@@ -63,4 +94,31 @@
   height: 16px;
   width: 16px;
   margin-right: 10px;
+}
+
+.footer__column_content_adress {
+  margin-left: 50px;
+} */
+
+@media screen and (max-width: 880px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__columns {
+    display: grid;
+    grid-template-areas:
+      'logo'
+      'position'
+      'about'
+      'midia'
+      'author';
+    row-gap: 20px;
+  }
+  .footer__column_content_social {
+    text-align: center;
+  }
+  .footer__column_content_copyright {
+    text-align: center;
+  }
 }
