@@ -4,3 +4,11 @@
   font-weight: 700;
   src: url(./Montserrat-Bold.woff);
 }
+
+@font-face {
+  font-family: 'Grutch Shaded';
+  font-style: normal;
+  font-weight: normal;
+
+  src: url(./GrutchShaded.woff);
+}

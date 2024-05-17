@@ -1,0 +1,69 @@
+.class {
+  background-color: #f8f8f8;
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10% 0;
+  align-items: center;
+}
+.class__figure {
+  padding-bottom: 2%;
+  background: url(../../images/blackboard.png) center no-repeat;
+  width: 450px;
+}
+.class__title {
+  font-family: 'Grutch Shaded';
+  font-size: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.class__main {
+  display: flex;
+}
+.class__text {
+  height: 20%;
+  width: 50%;
+  font-size: 14px;
+  background-color: rgb(224, 206, 206);
+  padding: 2%;
+  border-radius: 10%;
+}
+
+.class__image {
+  border-radius: 70%;
+  filter: drop-shadow(10px 10px 5px);
+}
+
+.class__link:hover {
+  opacity: 0.9;
+}
+
+.class__link {
+  color: lightcyan;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+  line-height: 100px;
+  margin: 10% 0;
+  background: linear-gradient(90deg, #9700fc 0%, #05444d 100%);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 880px) {
+  .class__main {
+    flex-direction: column;
+  }
+  .class__text {
+    text-align: center;
+    width: 95%;
+  }
+  .class__link {
+    width: 100%;
+  }
+}
