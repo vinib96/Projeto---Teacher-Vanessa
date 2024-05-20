@@ -13,11 +13,14 @@ const Footer = () => {
       <div className='footer__columns'>
         <div className='footer__column footer__column_content_logo'>
           <img
+            src={require('../../images/header-logo.png')}
+            alt='Logo da
+            Teacher Vanessa'
             className='logo logo_place_footer'
-            src={require('../../images/footer-logo.png')}
-            alt='Logo da Teacher Vanessa'
           />
+          <span className='footer__logo-text'>Teacher Vanessa</span>
         </div>
+
         <div className='footer__column footer__column_content_adress'>
           <h3 className='footer__column-heading'>Localização</h3>
           <Maps />

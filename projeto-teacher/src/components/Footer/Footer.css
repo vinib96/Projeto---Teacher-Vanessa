@@ -1,11 +1,12 @@
 .footer {
   min-height: 100%;
-  background-color: red;
+  background-color: rgb(25, 0, 255);
   display: flex;
   justify-content: space-around;
   color: white;
   font-family: Montserrat;
 }
+
 .footer__columns {
   display: grid;
   grid-template-areas:
@@ -36,6 +37,27 @@
   list-style: none;
   padding: 0;
 }
+.footer__column-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+.logo_place_footer {
+  display: flex;
+
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.footer__logo-text {
+  font-size: 24px;
+  padding-top: 5%;
+  color: rgb(255, 255, 255);
+}
+.footer__column_content_logo {
+  display: flex;
+}
+
 /* .footer__columns {
   display: flex;
   width: 90%;
@@ -47,6 +69,7 @@
   display: flex;
   flex-basis: 711px;
 }
+
 
 .logo_place_footer {
   display: flex;
