@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 function About() {
   return (
     <section className='about'>
-      <div className='about__figure'>
-        <h1 className='about__title'>Sobre mim:</h1>
-      </div>
+      <h1 className='about__title'>Sobre mim:</h1>
 
       <div className='about__main'>
         <p className='about__text'>

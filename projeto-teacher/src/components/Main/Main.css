@@ -13,9 +13,10 @@
 }
 .main__container {
   display: flex;
-
+  column-gap: 5%;
   justify-content: center;
 }
+
 .main__title {
   margin: 0;
   font-size: 45px;
@@ -35,9 +36,8 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
-  width: 40%;
-  height: 40%;
-  margin-left: 60px;
+  width: 100%;
+  /* height: 40%; */
 }
 
 .main__link {
@@ -60,6 +60,48 @@
   opacity: 0.9;
 }
 
+.main__highlights {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.main__highlights-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10% 5% 5%;
+}
+
+.main__highlights-toeic {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+.main__toeic-logo {
+  width: 80px;
+  height: 70px;
+}
+
+.main__highlights-text {
+  display: flex;
+  text-wrap: pretty;
+  text-align: center;
+  font-size: 12px;
+}
+.main__highlights-text_span {
+  font-size: 24px;
+  color: blue;
+}
+.main__highlights-icon {
+  font-size: 48px;
+  color: #ffd700;
+}
+
+.main__highlights-text_wrap {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 880px) {
   .main {
     padding: 2%;
@@ -86,6 +128,11 @@
     align-self: center;
   }
   .main__link {
+    width: 100%;
+  }
+  .main__highlights {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 }

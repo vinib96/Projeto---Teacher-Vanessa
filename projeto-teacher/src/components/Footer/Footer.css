@@ -20,6 +20,7 @@
 }
 .footer__column_content_logo {
   grid-area: logo;
+  display: flex;
 }
 .footer__column_content_adress {
   grid-area: position;
@@ -41,6 +42,9 @@
   text-decoration: none;
   color: aliceblue;
 }
+.footer__column-text {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .logo_place_footer {
   display: flex;
 
@@ -53,9 +57,6 @@
   font-size: 24px;
   padding-top: 5%;
   color: rgb(255, 255, 255);
-}
-.footer__column_content_logo {
-  display: flex;
 }
 
 /* .footer__columns {
@@ -138,10 +139,13 @@
       'author';
     row-gap: 20px;
   }
-  .footer__column_content_social {
+  .footer__columns {
     text-align: center;
   }
-  .footer__column_content_copyright {
-    text-align: center;
+  .footer__column_content_adress {
+    justify-self: center;
+  }
+  .footer__column_content_logo {
+    justify-self: center;
   }
 }

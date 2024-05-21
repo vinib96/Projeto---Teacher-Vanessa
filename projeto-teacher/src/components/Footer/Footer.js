@@ -1,13 +1,8 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 
 import Maps from '../Maps/Maps';
 
 const Footer = () => {
-  const [currentPage, setCurrentPage] = useState('');
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
   return (
     <footer className='footer'>
       <div className='footer__columns'>
@@ -30,9 +25,13 @@ const Footer = () => {
         </div>
         <div className='footer__column footer__column_content_about'>
           <h3 className='footer__column-heading'>Horário das aulas*:</h3>
-          <p>De segunda à quinta das 06:30 às 21:00</p>
-          <p>Sexta-feira das 07:00 às 15:00</p>
-          <p>*Mediante disponibilidade de horário</p>
+          <p className='footer__column-text'>
+            De segunda a quinta, das 06h30 às 21h00
+          </p>
+          <p className='footer__column-text'>Sexta-feira, das 07h00 às 15h00</p>
+          <p className='footer__column-text'>
+            *Mediante disponibilidade de horário
+          </p>
         </div>
         <div className='footer__column footer__column_content_social'>
           <h3 className='footer__column-heading'>Mídia social</h3>
@@ -51,7 +50,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a className='footer__column-link' href='#'>
+              <a
+                className='footer__column-link'
+                href='https://www.instagram.com/vancsbueno'
+              >
                 <img
                   className='footer__social-icons'
                   src={require('../../images/instagram_white.png')}

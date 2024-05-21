@@ -4,24 +4,21 @@
   display: flex;
   flex-direction: column;
   padding: 5% 10% 0;
-  align-items: center;
 }
-.about__figure {
-  padding-bottom: 2%;
-  background: url(../../images/blackboard.png) center no-repeat;
-  width: 400px;
-}
+
 .about__title {
-  font-family: 'Grutch Shaded';
-  font-size: 48px;
+  font-family: 'Montserrat';
+  font-size: 36px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: blue;
 }
 
 .about__main {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .about__text {
   height: 20%;
@@ -37,31 +34,17 @@
   filter: drop-shadow(10px 10px 5px);
 }
 
-.about__button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.about__button:hover {
-  opacity: 0.9;
-}
-
-.about__button-image {
-  width: 200px;
-  height: 70px;
-}
-
 .about__link {
   color: lightcyan;
   font-size: 24px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  align-self: center;
   text-align: center;
   text-decoration: none;
   width: 30%;
   line-height: 100px;
   margin: 10% 0;
-  background: linear-gradient(90deg, #9700fc 0%, #05444d 100%);
+  background: linear-gradient(to right, #ffd700, #ffa500);
   border-radius: 1rem;
 }
 

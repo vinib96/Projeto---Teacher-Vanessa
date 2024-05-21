@@ -23,11 +23,38 @@ function Main() {
             Saiba mais!
           </Link>
         </div>
-        <img
-          src={require('../../images/main.png')}
-          alt='Teste'
-          className='main__image'
-        />
+        <div className=' main__highlights'>
+          <img
+            src={require('../../images/main.png')}
+            alt='Imagem da Teacher Vanessa'
+            className='main__image'
+          />
+          <div className='main__highlights-info'>
+            <div className='main__highlights-toeic'>
+              <img
+                src={require('../../images/toeic.png')}
+                className='main__toeic-logo'
+                alt='Logo do TOEIC'
+              />
+              <p className='main__highlights-text'>Treinamento autorizado</p>
+            </div>
+
+            <p className='main__highlights-text'>
+              <span className='main__highlights-icon'>+</span>{' '}
+              <div className='main__highlights-text_wrap'>
+                <span className='main__highlights-text_span'>15</span>{' '}
+                <span>anos de experiência</span>
+              </div>
+            </p>
+            <p className='main__highlights-text'>
+              <span className='main__highlights-icon'>+</span>{' '}
+              <div className='main__highlights-text_wrap'>
+                <span className='main__highlights-text_span'>100</span>{' '}
+                <span>alunos</span>
+              </div>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
