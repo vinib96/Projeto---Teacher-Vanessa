@@ -1,8 +1,8 @@
 .footer {
-  min-height: 100%;
   background-color: rgb(25, 0, 255);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  column-gap: 5%;
   color: white;
   font-family: Montserrat;
 }
@@ -13,7 +13,9 @@
     'logo position about midia'
     'author . . .';
   margin: 10px;
-  column-gap: 20px;
+
+  width: 100%;
+  justify-content: space-around;
 }
 .footer__column-heading {
   margin-top: 10px;
@@ -22,6 +24,7 @@
   grid-area: logo;
   display: flex;
 }
+
 .footer__column_content_adress {
   grid-area: position;
 }
@@ -48,14 +51,17 @@
 .logo_place_footer {
   display: flex;
 
-  width: 50px;
-  height: 50px;
-  margin: 0;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
 }
 
 .footer__logo-text {
   font-size: 24px;
-  padding-top: 5%;
+  padding-left: 3%;
+  padding-top: 8%;
+  font-size: 20px;
+
   color: rgb(255, 255, 255);
 }
 
@@ -141,6 +147,13 @@
   }
   .footer__columns {
     text-align: center;
+  }
+  .footer__column_content_logo {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer__logo-text {
+    padding-top: 5%;
   }
   .footer__column_content_adress {
     justify-self: center;

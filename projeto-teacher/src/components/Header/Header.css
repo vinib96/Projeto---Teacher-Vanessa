@@ -8,51 +8,28 @@
   height: 80px;
   justify-content: space-between;
 }
-.header_content {
+.header__content {
   display: flex;
   margin-top: 10px;
   justify-content: space-between;
 }
 
-.header_logo {
+.header__logo {
   display: flex;
   margin-left: 10px;
 }
 
-.header_image {
+.header__image {
   align-self: center;
   width: 50px;
   height: 50px;
 }
 
-.header_logo-text {
+.header__logo-text {
   font-size: 24px;
 
   color: rgb(50, 7, 206);
   align-self: center;
-}
-.header_button-container {
-  display: flex;
-  margin-right: 10px;
-  list-style: none;
-}
-
-.header__button {
-  background: none;
-  color: black;
-  border: none;
-  cursor: pointer;
-  padding: 0 10px;
-  text-decoration: none;
-}
-
-.header__button_active {
-  color: red;
-  text-decoration: none;
-}
-
-.header__button:hover {
-  color: rgb(68, 68, 230);
 }
 
 .header__line {
@@ -81,11 +58,8 @@
     flex-direction: column;
     height: 100%;
   }
-  .header_content {
+  .header__content {
     justify-content: space-between;
-  }
-  .header_button-container {
-    display: none;
   }
 
   .header__hamburguer {
@@ -109,12 +83,16 @@
     display: flex;
     visibility: visible;
     opacity: 1;
+    justify-content: center;
   }
   .header__button-hamburger {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    list-style: none;
+    text-align: center;
   }
-  .header_button {
+  .header__button {
     padding-bottom: 10px;
   }
 }

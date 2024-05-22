@@ -76,11 +76,12 @@
   display: flex;
   flex-direction: column;
   width: 10%;
+  align-items: center;
 }
 
 .main__toeic-logo {
-  width: 80px;
-  height: 70px;
+  width: 60px;
+  height: 40px;
 }
 
 .main__highlights-text {

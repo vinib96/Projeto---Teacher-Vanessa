@@ -5,7 +5,7 @@ function About() {
       <h1 className='about__title'>Sobre mim:</h1>
 
       <div className='about__main'>
-        <p className='about__text'>
+        <p className='about__text about__text-first'>
           Ex velit duis nostrud fugiat irure minim irure Lorem. Irure aute culpa
           ad laborum sunt veniam. Occaecat ullamco commodo sit labore est irure.
           Eu aliquip commodo consectetur dolore ipsum est eu veniam ea labore.
@@ -13,16 +13,18 @@ function About() {
           occaecat amet sint.
         </p>
         <img
-          className='about__image'
-          src={require('../../images/teste de imagem.png')}
+          className='about__image about__image-first'
+          src={require('../../images/about-one.png')}
+          alt='Imagem da Teacher Vanessa'
         />
       </div>
       <div className='about__main'>
         <img
           className='about__image'
-          src={require('../../images/teste de imagem.png')}
+          src={require('../../images/about-two.png')}
+          alt='Imagem da Teacher Vanessa'
         />
-        <p className='about__text'>
+        <p className='about__text about__text-second'>
           Ex velit duis nostrud fugiat irure minim irure Lorem. Irure aute culpa
           ad laborum sunt veniam. Occaecat ullamco commodo sit labore est irure.
           Eu aliquip commodo consectetur dolore ipsum est eu veniam ea labore.

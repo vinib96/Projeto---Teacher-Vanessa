@@ -8,7 +8,7 @@ const Footer = () => {
       <div className='footer__columns'>
         <div className='footer__column footer__column_content_logo'>
           <img
-            src={require('../../images/header-logo.png')}
+            src={require('../../images/footer-logo.png')}
             alt='Logo da
             Teacher Vanessa'
             className='logo logo_place_footer'

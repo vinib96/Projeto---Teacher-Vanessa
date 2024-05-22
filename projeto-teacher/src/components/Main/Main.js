@@ -9,7 +9,10 @@ function Main() {
             Desbloqueie seu{' '}
             <span className='main__span'>
               potencial
-              <img src={require('../../images/Vector 6.png')}></img>
+              <img
+                src={require('../../images/Vector 6.png')}
+                alt='vetor amarelo'
+              />
             </span>{' '}
             e aprenda inglês de forma personalizada
           </h1>

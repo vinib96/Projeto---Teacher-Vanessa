@@ -1,102 +1,33 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
+import Navigation from '../Navigation/Navigation';
 function Header() {
-  const [currentPage, setCurrentPage] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
+  // function menuOpen() {
+  //   const menu = document.querySelector('.header__menu');
+  //   menu.classList.toggle('header__menu_open');
+  // }
 
-  function menuOpen() {
-    const menu = document.querySelector('.header__menu');
-    menu.classList.toggle('header__menu_open');
-  }
   return (
     <>
       <header className='header'>
-        <div className='header_content'>
+        <div className='header__content'>
           {' '}
-          <div className='header_logo'>
+          <div className='header__logo'>
             <img
               src={require('../../images/header-logo.png')}
               alt='Logo da
             Teacher Vanessa'
-              className='header_image'
+              className='header__image'
             />
-            <span className='header_logo-text'>Teacher Vanessa</span>
+            <span className='header__logo-text'>Teacher Vanessa</span>
           </div>
-          <nav>
-            <ul className='header_button-container'>
-              <li>
-                <Link
-                  to='/'
-                  onClick={() => handlePageChange('home')}
-                  className={
-                    currentPage === 'home'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/sobremim'
-                  onClick={() => handlePageChange('sobremim')}
-                  className={
-                    currentPage === 'sobremim'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Sobre Mim
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/sobreasaulas'
-                  onClick={() => handlePageChange('sobreasaulas')}
-                  className={
-                    currentPage === 'sobreasaulas'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Sobre as Aulas
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/quiz'
-                  onClick={() => handlePageChange('quiz')}
-                  className={
-                    currentPage === 'quiz'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Teste seu inglês!
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/contato'
-                  onClick={() => handlePageChange('contato')}
-                  className={
-                    currentPage === 'contato'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Contate-me
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <Navigation />
           <div className='header__hamburguer'>
-            <button className='header__hamburguer_icon' onClick={menuOpen}>
+            <button className='header__hamburguer_icon' onClick={toggleMenu}>
               <img
                 className='header__hamburger_image'
                 src={require('../../images/hamburger.png')}
@@ -105,76 +36,8 @@ function Header() {
             </button>
           </div>
         </div>
-        <div className='header__menu'>
-          <nav>
-            <ul className='header__button-hamburger'>
-              <li>
-                <Link
-                  to='/'
-                  onClick={() => handlePageChange('home')}
-                  className={
-                    currentPage === 'home'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/sobremim'
-                  onClick={() => handlePageChange('sobremim')}
-                  className={
-                    currentPage === 'sobremim'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Sobre Mim
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/sobreasaulas'
-                  onClick={() => handlePageChange('sobreasaulas')}
-                  className={
-                    currentPage === 'sobreasaulas'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Sobre as Aulas
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/quiz'
-                  onClick={() => handlePageChange('quiz')}
-                  className={
-                    currentPage === 'quiz'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Teste seu inglês!
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/contato'
-                  onClick={() => handlePageChange('contato')}
-                  className={
-                    currentPage === 'contato'
-                      ? 'header__button_active'
-                      : 'header__button'
-                  }
-                >
-                  Contate-me
-                </Link>
-              </li>
-            </ul>
-          </nav>
+        <div className={menuOpen ? 'header__menu_open' : 'header__menu'}>
+          <Navigation menuOpen={menuOpen} />
         </div>
         <div className='header__line' />
       </header>
