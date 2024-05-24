@@ -10,6 +10,7 @@
 @import url(./components/Preloader/preloader.css);
 @import url(./components/Quiz/Quiz.css);
 @import url(./components/Maps/Maps.css);
+@import url(./components/Contact/Contact.css);
 
 html,
 body {
