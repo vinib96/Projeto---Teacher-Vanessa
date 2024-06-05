@@ -1,13 +1,12 @@
 .class {
   background-color: #f8f8f8;
-  font-family: Montserrat;
+
   display: flex;
   flex-direction: column;
   padding: 5% 10% 0;
 }
 
 .class__title {
-  font-family: 'Montserrat';
   font-size: 36px;
   font-weight: 400;
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from '../Navigation/Navigation';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -6,10 +6,18 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  // function menuOpen() {
-  //   const menu = document.querySelector('.header__menu');
-  //   menu.classList.toggle('header__menu_open');
-  // }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMenuOpen(false);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>

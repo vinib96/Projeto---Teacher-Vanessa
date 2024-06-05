@@ -15,3 +15,23 @@ export async function submitForm(data) {
 
   return response.json();
 }
+
+export const fetchQuestions = async () => {
+  try {
+    const response = await fetch(
+      'https://the-trivia-api.com/api/questions?limit=10&categories=grammar',
+      {
+        method: 'GET',
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch questions');
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+};

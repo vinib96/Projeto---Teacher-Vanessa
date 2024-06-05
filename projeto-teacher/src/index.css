@@ -11,6 +11,8 @@
 @import url(./components/Quiz/Quiz.css);
 @import url(./components/Maps/Maps.css);
 @import url(./components/Contact/Contact.css);
+@import url(./components/MainAbout/MainAboutMe.css);
+@import url(./components/MainClass/MainClass.css);
 
 html,
 body {
@@ -18,4 +20,5 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: auto;
+  font-family: 'Montserrat';
 }
