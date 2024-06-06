@@ -4,7 +4,7 @@ function MainAbout() {
     <section className='main__about'>
       <div className='main__container'>
         {' '}
-        <div className=' main__highlights'>
+        <div className=' main__about-highlights'>
           <img
             src={require('../../images/sobremim main.png')}
             alt='chapeu de formatura sobre livros'
@@ -36,7 +36,7 @@ function MainAbout() {
             </p>
           </div> */}
         </div>
-        <div className='main__title-container'>
+        <div className='main__about-title-container'>
           <h1 className='main__about-title'>
             Veja como minha experiência pode ajudar você a dominar o inglês.
           </h1>

@@ -2,12 +2,13 @@
   display: flex;
   background-color: white;
   justify-content: center;
-  align-self: center;
+
+  padding: 2rem;
 }
 
 .main__about-image {
-  width: 300px;
-  height: 200px;
+  max-width: 300px;
+  max-height: 200px;
   align-items: flex-end;
 }
 
@@ -15,6 +16,20 @@
   font-size: 48px;
   font-weight: 300;
   color: rgb(73, 70, 70);
+  text-shadow: #000 -1px -1px 1px;
+}
+
+.main__about-title-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+  align-items: center;
+}
+
+.main__about-highlights {
+  display: flex;
+  align-items: center;
 }
 
 .main__about-custom {
@@ -103,4 +118,23 @@
 }
 .main__about-button span:hover:after {
   width: 100%;
+}
+
+@media screen and (max-width: 880px) {
+  .main__about {
+    align-items: center;
+  }
+  .main__about-container {
+    align-items: center;
+  }
+  .main__about-highlights {
+    justify-content: center;
+  }
+  .main__about-title-container {
+    width: 100%;
+    align-items: center;
+  }
+  .main__about-title {
+    font-size: 35px;
+  }
 }

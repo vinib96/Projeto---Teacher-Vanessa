@@ -1,3 +1,21 @@
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.main__quiz {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
 .main__quiz-container {
   background: linear-gradient(
       0deg,
@@ -18,6 +36,10 @@
   margin: 0;
   font-size: 45px;
   font-weight: 700;
+}
+
+.main__quiz-subtitle {
+  text-shadow: #000 -1px -1px 1px;
 }
 
 .main__quiz-link {
@@ -88,14 +110,8 @@
   border-radius: 10px;
 }
 
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
+@media screen and (max-width: 880px) {
+  .main__quiz-container {
+    text-align: center;
   }
 }

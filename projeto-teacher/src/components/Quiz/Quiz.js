@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchQuestions } from '../../utils/ThirdPartyApi';
+import Preloader from '../Preloader/Preloader';
 import ResultPopup from '../Tag/Tag';
 
 function Quiz() {
@@ -84,7 +85,11 @@ function Quiz() {
   }
 
   if (questions.length === 0) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Preloader />
+      </div>
+    );
   }
 
   const currentQuestion = questions[currentQuestionIndex];
