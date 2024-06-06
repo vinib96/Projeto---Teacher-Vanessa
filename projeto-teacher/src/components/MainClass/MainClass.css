@@ -8,3 +8,16 @@
   height: 300px;
   align-items: flex-end;
 }
+
+.main__container {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.main__class-title {
+  color: rgb(59, 189, 221);
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+}

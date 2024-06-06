@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import MainAbout from '../MainAbout/MainAboutMe';
 import MainClass from '../MainClass/MainClass';
+import Tag from '../Tag/Tag';
+import MainQuiz from '../MainQuiz/MainQuiz';
 function Main() {
   return (
     <>
@@ -21,10 +23,8 @@ function Main() {
               e aprenda inglês de forma personalizada
             </h1>
             <h2>
-              In labore nulla et quis non qui non fugiat sunt do quis laborum
-              tempor. Sit do sint aliquip cillum exercitation. Irure id proident
-              reprehenderit duis laborum voluptate ut incididunt est cillum in
-              mollit ad ad.
+              Com a ajuda da Teacher Vanessa, você vai perceber que aprender um
+              novo idioma pode ser divertido!
             </h2>
           </div>
           <div className=' main__highlights'>
@@ -63,6 +63,7 @@ function Main() {
       </section>
       <MainAbout />
       <MainClass />
+      <MainQuiz />
     </>
   );
 }

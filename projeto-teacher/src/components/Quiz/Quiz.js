@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchQuestions } from '../../utils/ThirdPartyApi';
-import ResultPopup from '../ResultPopup/ResultPopup';
+import ResultPopup from '../Tag/Tag';
 
 function Quiz() {
   const [questions, setQuestions] = useState([]);

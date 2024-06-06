@@ -37,13 +37,15 @@ function MainAbout() {
           </div> */}
         </div>
         <div className='main__title-container'>
-          <h1 className='main__title'>
-            Veja como minha experiência internacional pode ajudar você a dominar
-            o inglês.
+          <h1 className='main__about-title'>
+            Veja como minha experiência pode ajudar você a dominar o inglês.
           </h1>
           <h2>Conheça mais sobre minha formação academica e certificações:</h2>
-          <Link to='/sobremim' className='main__link'>
-            Saiba mais!
+          <Link
+            to='/sobremim'
+            className='main__about-button main__about-custom '
+          >
+            <span>Saiba mais!</span>
           </Link>
         </div>
       </div>

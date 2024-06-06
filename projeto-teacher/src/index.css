@@ -13,6 +13,8 @@
 @import url(./components/Contact/Contact.css);
 @import url(./components/MainAbout/MainAboutMe.css);
 @import url(./components/MainClass/MainClass.css);
+@import url(./components/MainQuiz/MainQuiz.css);
+@import url(./components/Tag/Tag.css);
 
 html,
 body {

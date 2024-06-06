@@ -40,7 +40,7 @@
   /* height: 40%; */
 }
 
-.main__link {
+/* .main__link {
   display: flex;
   justify-content: center;
   color: lightcyan;
@@ -54,7 +54,7 @@
   margin: 5% 0;
   background: linear-gradient(to right, #ffd700, #ffa500);
   border-radius: 1rem;
-}
+} */
 
 .main__link:hover {
   opacity: 0.9;
