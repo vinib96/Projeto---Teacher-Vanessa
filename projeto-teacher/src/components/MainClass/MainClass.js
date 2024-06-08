@@ -9,7 +9,7 @@ function MainClass() {
           <h1 className='main__class-title'>
             Aulas personalizadas para cada aluno
           </h1>
-          <h2>
+          <h2 className='main__class-subtitle'>
             Saiba mais{' '}
             <Link className='main__class-link' to='/sobreasaulas'>
               clicando aqui

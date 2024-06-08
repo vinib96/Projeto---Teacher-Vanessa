@@ -49,6 +49,11 @@
 }
 .quiz__results-li {
   margin-bottom: 20px;
+  list-style: none;
+}
+.quiz__results-ul {
+  padding: 0;
+  margin: 0;
 }
 .quiz__preloader {
   margin: 0;
@@ -56,6 +61,13 @@
   background-color: #f8f8f8;
 
   overflow: hidden;
+}
+.quiz__results-score {
+  font-size: 28px;
+}
+
+.quiz__results-score_correct {
+  color: rgb(0, 38, 255);
 }
 
 .quiz__results-container {
@@ -70,6 +82,17 @@
   padding: 1rem;
 }
 
+.quiz__results-question {
+  color: rgb(255, 0, 0);
+}
+
+.quiz__results-answer {
+  color: rgb(29, 150, 29);
+}
+
+.quiz__results-answer_correct {
+  color: rgb(255, 0, 170);
+}
 .quiz__results-link {
   text-decoration: none;
   color: red;

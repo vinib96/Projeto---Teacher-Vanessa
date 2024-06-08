@@ -63,23 +63,29 @@ function Quiz() {
             </Link>
             !
           </p>
-          <p>
-            Your score: {score} out of {questions.length}
+          <p className='quiz__results-score'>
+            Your score:{' '}
+            <span className='quiz__results-score_correct'>{score} </span>out of{' '}
+            {questions.length}
           </p>
           <h2>Review your answers:</h2>
-          <ul>
+          <ul className='quiz__results-ul'>
             {answersSummary.map((summary, index) => (
               <li key={index} className='quiz__results-li'>
                 <p>
-                  <strong>Question:</strong> {summary.question}
+                  <strong className='quiz__results-question'>Question:</strong>{' '}
+                  {summary.question}
                 </p>
                 <p>
-                  <strong>Your Answer:</strong> {summary.selectedAnswer}{' '}
-                  {summary.isCorrect ? '✔️' : '❌'}
+                  <strong className='quiz__results-answer'>Your Answer:</strong>{' '}
+                  {summary.selectedAnswer} {summary.isCorrect ? '✔️' : '❌'}
                 </p>
                 {!summary.isCorrect && (
                   <p>
-                    <strong>Correct Answer:</strong> {summary.correctAnswer}
+                    <strong className='quiz__results-answer_correct'>
+                      Correct Answer:
+                    </strong>{' '}
+                    {summary.correctAnswer}
                   </p>
                 )}
               </li>
