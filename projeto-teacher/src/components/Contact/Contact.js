@@ -31,7 +31,7 @@ function Contact() {
         {submitted ? (
           <h3>Mensagem enviada com sucesso!</h3>
         ) : (
-          <form onSubmit={submit}>
+          <form onSubmit={submit} className='contact__form'>
             <input
               type='email'
               name='email'
@@ -67,9 +67,8 @@ function Contact() {
               required
             />
             <button className='contact__submit' type='submit'>
-              Enviar!
+              <span className='contact__span'>Enviar! </span>
             </button>
-            )
           </form>
         )}
       </div>

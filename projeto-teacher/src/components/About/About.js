@@ -6,11 +6,11 @@ function About() {
 
       <div className='about__main'>
         <p className='about__text about__text-first'>
-          Ex velit duis nostrud fugiat irure minim irure Lorem. Irure aute culpa
-          ad laborum sunt veniam. Occaecat ullamco commodo sit labore est irure.
-          Eu aliquip commodo consectetur dolore ipsum est eu veniam ea labore.
-          Id qui labore ea ex veniam aute voluptate esse consequat amet duis
-          occaecat amet sint.
+          Meu nome é Vanessa, mas meus alunos me conhecem com “Teacher Van”. Sou
+          formada em Letras – Inglês pela Universidade Metodista de Piracicaba
+          (UNIMEP), possuo pós-graduação em Língua inglesa e Tradução (UNIMEP) e
+          Mestrado em Comunicação e Educação pela Universidade de São Paulo
+          (USP- ESALQ).
         </p>
         <img
           className='about__image about__image-first'
@@ -25,11 +25,12 @@ function About() {
           alt='Imagem da Teacher Vanessa'
         />
         <p className='about__text about__text-second'>
-          Ex velit duis nostrud fugiat irure minim irure Lorem. Irure aute culpa
-          ad laborum sunt veniam. Occaecat ullamco commodo sit labore est irure.
-          Eu aliquip commodo consectetur dolore ipsum est eu veniam ea labore.
-          Id qui labore ea ex veniam aute voluptate esse consequat amet duis
-          occaecat amet sint.
+          Também possuo a certificação internacional para a preparação dos
+          alunos para o teste de proficiência em língua inglesa “TOEIC – Test of
+          English for International Communication”. Tenho uma experiência de
+          mais de 15 anos com o ensino de língua inglesa, tendo trabalhado como
+          professora em escolas de idioma, nos ensinos fundamental e médio, em
+          universidades e também na modalidade de aulas particulares.
         </p>
       </div>
       <Link to='/sobreasaulas' className='about__link'>

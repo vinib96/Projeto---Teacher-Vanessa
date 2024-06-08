@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchQuestions } from '../../utils/ThirdPartyApi';
 import Preloader from '../Preloader/Preloader';
-import ResultPopup from '../Tag/Tag';
+import { Link } from 'react-router-dom';
 
 function Quiz() {
   const [questions, setQuestions] = useState([]);
@@ -52,41 +52,47 @@ function Quiz() {
   if (showResults) {
     return (
       <div className='quiz__results'>
-        <h1>Quiz Results</h1>
-        <p>
-          Aqui estão seus resultados. Independente de sua pontuação, a Teacher
-          Vanessa tem aulas preparadas para todos os níveis. Clique aqui e entre
-          em contato!
-        </p>
-        <p>
-          Your score: {score} out of {questions.length}
-        </p>
-        <h2>Review your answers:</h2>
-        <ul>
-          {answersSummary.map((summary, index) => (
-            <li key={index} style={{ marginBottom: '20px' }}>
-              <p>
-                <strong>Question:</strong> {summary.question}
-              </p>
-              <p>
-                <strong>Your Answer:</strong> {summary.selectedAnswer}{' '}
-                {summary.isCorrect ? '✔️' : '❌'}
-              </p>
-              {!summary.isCorrect && (
+        <div className='quiz__results-container'>
+          <h1>Quiz Results</h1>
+          <p>
+            Aqui estão seus resultados. Independente de sua pontuação, a Teacher
+            Vanessa tem aulas preparadas para todos os níveis. Clique aqui e
+            entre em{' '}
+            <Link to='/contato' className='quiz__results-link quiz__flash'>
+              contato
+            </Link>
+            !
+          </p>
+          <p>
+            Your score: {score} out of {questions.length}
+          </p>
+          <h2>Review your answers:</h2>
+          <ul>
+            {answersSummary.map((summary, index) => (
+              <li key={index} className='quiz__results-li'>
                 <p>
-                  <strong>Correct Answer:</strong> {summary.correctAnswer}
+                  <strong>Question:</strong> {summary.question}
                 </p>
-              )}
-            </li>
-          ))}
-        </ul>
+                <p>
+                  <strong>Your Answer:</strong> {summary.selectedAnswer}{' '}
+                  {summary.isCorrect ? '✔️' : '❌'}
+                </p>
+                {!summary.isCorrect && (
+                  <p>
+                    <strong>Correct Answer:</strong> {summary.correctAnswer}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }
 
   if (questions.length === 0) {
     return (
-      <div>
+      <div className='quiz__preloader'>
         <Preloader />
       </div>
     );

@@ -5,16 +5,24 @@
   flex-direction: column;
   padding: 5% 10%;
   align-items: center;
+  flex-grow: 1;
 }
 .contact__container {
   text-align: center;
-  width: 430px;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 26px;
-  background: rgb(255, 255, 153);
-  border-radius: 10%;
+  background: rgb(194, 195, 255);
+  border-radius: 2rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .contact__title {
@@ -25,21 +33,6 @@
   text-align: center;
   color: blue;
   margin: 0 0 5% 0;
-}
-
-.contact__submit {
-  color: lightcyan;
-  cursor: pointer;
-  font-size: 24px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  align-self: center;
-  text-align: center;
-  text-decoration: none;
-  width: 70%;
-  line-height: 50px;
-  margin: 0;
-  background: linear-gradient(to right, #ffd700, #ffa500);
-  border-radius: 1rem;
 }
 
 .contact__input {
@@ -55,4 +48,47 @@
   white-space: pre-wrap;
   max-width: 70%;
   height: 50px;
+}
+
+.contact__span {
+  position: relative;
+  z-index: 2;
+}
+
+.contact__submit {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 1rem;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.contact__submit:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0099ff;
+  transition: all 0.35s;
+  border-radius: 1rem;
+}
+
+.contact__submit:hover {
+  color: #fff;
+}
+
+.contact__submit:hover:after {
+  width: 100%;
 }

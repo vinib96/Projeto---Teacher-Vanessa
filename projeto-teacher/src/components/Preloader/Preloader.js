@@ -6,7 +6,11 @@ function Preloader() {
       <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
       <title>preloader</title>
       <link rel='stylesheet' href='./preloader.css' />
-      <i className='circle-preloader' />
+      <div className='preloader'>
+        {' '}
+        <i className='preloader__circle' />
+        <span className='preloader__text'>Loading Quiz...</span>
+      </div>
     </>
   );
 }

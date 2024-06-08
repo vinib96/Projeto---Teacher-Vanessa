@@ -24,6 +24,7 @@
     ),
     url('../../images/white-question.jpg') no-repeat;
   background-size: cover;
+  filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,10 +37,12 @@
   margin: 0;
   font-size: 45px;
   font-weight: 700;
+  z-index: 1;
 }
 
 .main__quiz-subtitle {
   text-shadow: #000 -1px -1px 1px;
+  z-index: 2;
 }
 
 .main__quiz-link {

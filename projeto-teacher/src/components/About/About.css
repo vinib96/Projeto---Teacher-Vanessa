@@ -24,7 +24,8 @@
   font-size: 14px;
   background-color: rgb(253, 249, 190);
   padding: 2%;
-  border-radius: 10%;
+  border-radius: 1rem;
+  text-align: justify;
 }
 
 .about__image {
