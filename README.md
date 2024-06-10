@@ -23,7 +23,7 @@ Este projeto tem como objetivo criar um site para divulgar o trabalho de uma pro
 
 ## Demonstração
 
-Você pode acessar o site [aqui](https://vinib96.github.io/web_project_around_auth/).
+Você pode acessar o site [aqui](https://teachervanessa.netlify.app/).
 
 
 ## Apêndice
