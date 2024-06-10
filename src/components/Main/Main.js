@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom';
 import MainAbout from '../MainAbout/MainAboutMe';
 import MainClass from '../MainClass/MainClass';
-import Tag from '../Tag/Tag';
+
 import MainQuiz from '../MainQuiz/MainQuiz';
 function Main() {
   return (

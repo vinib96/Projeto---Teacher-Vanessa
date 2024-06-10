@@ -18,7 +18,7 @@ function Contact() {
       } else {
         setError(response.message);
       }
-    } catch (error) {
+    } catch {
       setError(error.message);
     }
   }
