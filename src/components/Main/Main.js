@@ -43,17 +43,17 @@ function Main() {
 
               <p className='main__highlights-text'>
                 <span className='main__highlights-icon'>+</span>{' '}
-                <div className='main__highlights-text_wrap'>
+                <span className='main__highlights-text_wrap'>
                   <span className='main__highlights-text_span'>15</span>{' '}
                   <span>anos de experiência</span>
-                </div>
+                </span>
               </p>
               <p className='main__highlights-text'>
                 <span className='main__highlights-icon'>+</span>{' '}
-                <div className='main__highlights-text_wrap'>
+                <span className='main__highlights-text_wrap'>
                   <span className='main__highlights-text_span'>100</span>{' '}
                   <span>alunos</span>
-                </div>
+                </span>
               </p>
             </div>
           </div>
