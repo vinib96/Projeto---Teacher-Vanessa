@@ -1,0 +1,26 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/font.css);
+@import url(./components/About/About.css);
+@import url(./components/App/App.css);
+@import url(./components/Class/Class.css);
+@import url(./components/Footer/Footer.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Navigation/Navigation.css);
+@import url(./components/Main/Main.css);
+@import url(./components/Preloader/Preloader.css);
+@import url(./components/Quiz/Quiz.css);
+@import url(./components/Maps/Maps.css);
+@import url(./components/Contact/Contact.css);
+@import url(./components/MainAbout/MainAboutMe.css);
+@import url(./components/MainClass/MainClass.css);
+@import url(./components/MainQuiz/MainQuiz.css);
+@import url(./components/Tag/Tag.css);
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  font-family: 'Montserrat';
+}

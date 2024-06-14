@@ -1,0 +1,122 @@
+.quiz {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  flex-grow: 1;
+}
+
+.quiz__paragraph {
+  text-align: center;
+}
+
+.quiz__container {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(194, 195, 255);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.quiz__question {
+  text-align: center;
+}
+.quiz__answers {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz__button {
+  display: flex;
+  justify-content: center;
+  color: lightcyan;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  width: 40%;
+  line-height: 30px;
+  margin: 5% 0;
+  background: linear-gradient(to right, #6d60e7, #bdbdbc);
+  border-radius: 1rem;
+}
+
+.quiz__results {
+  background-color: #f8f8f8;
+}
+.quiz__results-li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.quiz__results-ul {
+  padding: 0;
+  margin: 0;
+}
+.quiz__preloader {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+
+  overflow: hidden;
+}
+.quiz__results-score {
+  font-size: 28px;
+}
+
+.quiz__results-score_correct {
+  color: rgb(0, 38, 255);
+}
+
+.quiz__results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgb(194, 195, 255);
+  margin: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.quiz__results-question {
+  color: rgb(255, 0, 0);
+}
+
+.quiz__results-answer {
+  color: rgb(29, 150, 29);
+}
+
+.quiz__results-answer_correct {
+  color: rgb(255, 0, 170);
+}
+.quiz__results-link {
+  text-decoration: none;
+  color: red;
+}
+.quiz__flash {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    color: rgb(255, 175, 175);
+  }
+  50% {
+    color: rgb(255, 0, 0);
+  }
+  100% {
+    color: red;
+  }
+}
+@media screen and (max-width: 880px) {
+  .quiz {
+    text-align: center;
+  }
+  .quiz__container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+.nav__button-container {
+  display: flex;
+  margin-right: 10px;
+  list-style: none;
+}
+
+.nav__button {
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.nav__button_active {
+  color: red;
+  text-decoration: none;
+}
+
+.nav__button:hover {
+  color: rgb(68, 68, 230);
+}
+
+@media screen and (max-width: 880px) {
+  .nav__button-container {
+    display: none;
+  }
+}
